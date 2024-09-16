@@ -1,0 +1,108 @@
+
+/* css/style.css */
+:root {
+    --bg-light: rgb(248, 249, 250); /* F8F9FA */
+    --primary: rgb(37, 248, 167);  /* 37F8A7 */
+    --secondary: rgb(31, 145, 251); /* 1F91FB */
+    --white: rgb(255, 255, 255);   /* FFFFFF */
+    --black: rgb(0, 0, 0);         /* 000000 */
+}
+
+/* Menu flutuante fixo no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;  /* Mantém o menu acima de outros elementos */
+  background-color: rgba(255, 255, 255, 0.9);  /* Leve transparência */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+}
+
+/* O corpo da página não precisa de padding adicional para o menu */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-custom {
+    background-color: var(--bg-light);
+}
+
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+    color: var(--black);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: var(--black);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.banner {
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajuste a altura conforme necessário */
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .footer {
+    background-image: url('../images/footer.png'); /* Caminho local da imagem do footer */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: var(--secondary);
+  }
+  
+  .footer a:hover {
+    color: #ddd;
+  }
+  
+  .footer .social-icons img {
+    width: 24px; /* Ajuste o tamanho dos ícones das redes sociais */
+  }
+  
+  
+  .footer .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 20px;
+}
