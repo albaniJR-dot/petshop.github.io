@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <section id="banner" class="container-fluid p-5 text-center banner">
+        <div class="container">
+            <h1 class="display-4">Produtos PetShop</h1>
+            <p class="lead">A loja perfeita para seu amigo de estimação. Produtos, serviços e amor para todos os tamanhos de pets.</p>
+            
+        </div>
+    </section>
+
+    <!-- Filtros e Produtos -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Filtros -->
+            <aside class="col-md-3">
+                <h5>Filtrar por categorias</h5>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Mobília" id="categoriaMobilia">
+                    <label class="form-check-label" for="categoriaMobilia">Mobília</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Tigelas" id="categoriaTigelas">
+                    <label class="form-check-label" for="categoriaTigelas">Tigelas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Vestuário" id="categoriaVestuario">
+                    <label class="form-check-label" for="categoriaVestuario">Vestuário</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Rações" id="categoriaRacoes">
+                    <label class="form-check-label" for="categoriaRacoes">Rações</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Brinquedos" id="categoriaBrinquedos">
+                    <label class="form-check-label" for="categoriaBrinquedos">Brinquedos</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-category" type="checkbox" value="Promoção" id="categoriaPromocao">
+                    <label class="form-check-label" for="categoriaPromocao">Promoção</label>
+                </div>
+
+                <hr>
+
+                <h5>Filtrar por preço</h5>
+                <input type="range" class="form-range" min="9" max="399" id="filterPrice">
+                <p id="priceRange">Preço: R$9 - R$399</p>
+
+                <hr>
+
+                <h5>Filtrar por marcas</h5>
+                <div class="form-check">
+                    <input class="form-check-input filter-brand" type="checkbox" value="Alimentos naturais" id="marcaAlimentosNaturais">
+                    <label class="form-check-label" for="marcaAlimentosNaturais">Alimentos naturais</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-brand" type="checkbox" value="Cuidados com os animais" id="marcaCuidados">
+                    <label class="form-check-label" for="marcaCuidados">Cuidados com os animais</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-brand" type="checkbox" value="Amigo dos cães" id="marcaAmigoCaes">
+                    <label class="form-check-label" for="marcaAmigoCaes">Amigo dos cães</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input filter-brand" type="checkbox" value="Linha verde" id="marcaLinhaVerde">
+                    <label class="form-check-label" for="marcaLinhaVerde">Linha verde</label>
+                </div>
+            </aside>
+
+            <!-- Listagem de Produtos -->
+            <section class="col-md-9">
+                <h2 class="text-center mb-4">Produtos</h2>
+                <div class="row" id="product-list">
+                    <!-- Os produtos serão renderizados aqui -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>
